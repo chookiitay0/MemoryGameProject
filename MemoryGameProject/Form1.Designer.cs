@@ -172,7 +172,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.ClientSize = new System.Drawing.Size(1237, 658);
+            this.ClientSize = new System.Drawing.Size(1341, 658);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.GameTitle);
             this.Controls.Add(this.pictureBox8);
@@ -183,6 +183,7 @@
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Memory Game";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

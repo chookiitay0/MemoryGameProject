@@ -130,11 +130,41 @@ namespace MemoryGameProject.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PE1c {
+            get {
+                object obj = ResourceManager.GetObject("PE1c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Code.
         /// </summary>
         internal static string Severity {
             get {
                 return ResourceManager.GetString("Severity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap winner {
+            get {
+                object obj = ResourceManager.GetObject("winner", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap YouFoundAMatch {
+            get {
+                object obj = ResourceManager.GetObject("YouFoundAMatch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

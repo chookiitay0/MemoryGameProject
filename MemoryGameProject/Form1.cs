@@ -22,6 +22,7 @@ namespace MemoryGameProject
         private PictureBox m_FirstPictureBox;
         private PictureBox m_SecondPictureBox;
 
+        private MessagBoxDesign msg = new MessagBoxDesign();
 
 
         public Form1()
@@ -29,6 +30,8 @@ namespace MemoryGameProject
             InitializeComponent();
 
             SetImagesArray();
+
+            restart();
         }
 
         public void Swap (int i, int j)
@@ -132,13 +135,12 @@ namespace MemoryGameProject
         {
             if (IsImagesMatch(m_FirstPictureBox.Image, m_SecondPictureBox.Image))
             {
+                m_FirstPictureBox.Image = Resources.YouFoundAMatch;
+                m_SecondPictureBox.Image = Resources.YouFoundAMatch;
 
                 m_FirstPictureBox.Enabled = false;
                 m_SecondPictureBox.Enabled = false;
                 m_Count += 2;
-
-                // m_FirstPictureBox.Image = Resources.match;
-                // m_SecondPictureBox.Image = Resources.match;
             }
 
             else
@@ -151,7 +153,7 @@ namespace MemoryGameProject
 
             if (m_Count == Card_Number)
             {
-                MessageBox.Show("You Won the Game!!!!");
+                msg.Show(); // automaticly opens a MessageBox window. 
             }
         }
 
@@ -161,8 +163,16 @@ namespace MemoryGameProject
             
         }
 
+        
+
+        private void restart()
+        {
+            
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
+
             m_Count = 0;
 
             Images_Array[0] = Resources.back;
@@ -178,6 +188,10 @@ namespace MemoryGameProject
             Images_Array[7] = Resources.back;
 
             SetImagesArray();
+
+            m_FirstPictureBox.Image = Resources.back;
+            m_SecondPictureBox.Image = Resources.back;
+            m_Third
 
         }
     }
