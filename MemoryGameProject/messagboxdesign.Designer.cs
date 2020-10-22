@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.PlayAgainLabel = new System.Windows.Forms.Label();
             this.NoButton = new System.Windows.Forms.Button();
-            this.YesButton = new System.Windows.Forms.Button();
             this.GifBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -41,26 +39,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.PlayAgainLabel);
             this.panel1.Controls.Add(this.NoButton);
-            this.panel1.Controls.Add(this.YesButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 369);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(603, 58);
             this.panel1.TabIndex = 0;
-            // 
-            // PlayAgainLabel
-            // 
-            this.PlayAgainLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PlayAgainLabel.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.PlayAgainLabel.Location = new System.Drawing.Point(12, 5);
-            this.PlayAgainLabel.Name = "PlayAgainLabel";
-            this.PlayAgainLabel.Size = new System.Drawing.Size(155, 46);
-            this.PlayAgainLabel.TabIndex = 2;
-            this.PlayAgainLabel.Text = "Play Again?";
-            this.PlayAgainLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.PlayAgainLabel.Click += new System.EventHandler(this.PlayAgainLabel_Click);
             // 
             // NoButton
             // 
@@ -73,24 +57,9 @@
             this.NoButton.Name = "NoButton";
             this.NoButton.Size = new System.Drawing.Size(205, 46);
             this.NoButton.TabIndex = 1;
-            this.NoButton.Text = "No";
+            this.NoButton.Text = "Exit";
             this.NoButton.UseVisualStyleBackColor = false;
             this.NoButton.Click += new System.EventHandler(this.NoButton_Click);
-            // 
-            // YesButton
-            // 
-            this.YesButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.YesButton.FlatAppearance.BorderSize = 0;
-            this.YesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.YesButton.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.YesButton.ForeColor = System.Drawing.Color.White;
-            this.YesButton.Location = new System.Drawing.Point(180, 5);
-            this.YesButton.Name = "YesButton";
-            this.YesButton.Size = new System.Drawing.Size(200, 46);
-            this.YesButton.TabIndex = 1;
-            this.YesButton.Text = "Yes";
-            this.YesButton.UseVisualStyleBackColor = false;
-            this.YesButton.Click += new System.EventHandler(this.YesButton_Click);
             // 
             // GifBox
             // 
@@ -144,9 +113,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button YesButton;
         private System.Windows.Forms.Button NoButton;
-        private System.Windows.Forms.Label PlayAgainLabel;
         private System.Windows.Forms.PictureBox GifBox;
         private System.Windows.Forms.Label label1;
     }

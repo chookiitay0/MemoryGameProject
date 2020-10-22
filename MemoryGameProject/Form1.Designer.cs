@@ -41,6 +41,8 @@
             this.GameTitle = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
+            this.CountUp = new System.Windows.Forms.Timer(this.components);
+            this.ShowSeconds = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -56,7 +58,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(567, 32);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(245, 172);
+            this.pictureBox1.Size = new System.Drawing.Size(244, 172);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -67,7 +69,7 @@
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(856, 32);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(245, 172);
+            this.pictureBox7.Size = new System.Drawing.Size(244, 172);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 5;
             this.pictureBox7.TabStop = false;
@@ -78,7 +80,7 @@
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(972, 234);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(245, 172);
+            this.pictureBox6.Size = new System.Drawing.Size(244, 172);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 6;
             this.pictureBox6.TabStop = false;
@@ -89,7 +91,7 @@
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(176, 234);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(245, 172);
+            this.pictureBox2.Size = new System.Drawing.Size(244, 172);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
@@ -98,9 +100,9 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(856, 433);
+            this.pictureBox5.Location = new System.Drawing.Point(856, 432);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(245, 172);
+            this.pictureBox5.Size = new System.Drawing.Size(244, 172);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
@@ -109,9 +111,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(263, 433);
+            this.pictureBox3.Location = new System.Drawing.Point(262, 432);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(245, 172);
+            this.pictureBox3.Size = new System.Drawing.Size(244, 172);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
@@ -120,9 +122,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(567, 433);
+            this.pictureBox4.Location = new System.Drawing.Point(567, 432);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(245, 172);
+            this.pictureBox4.Size = new System.Drawing.Size(244, 172);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 10;
             this.pictureBox4.TabStop = false;
@@ -131,9 +133,9 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(263, 32);
+            this.pictureBox8.Location = new System.Drawing.Point(262, 32);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(245, 172);
+            this.pictureBox8.Size = new System.Drawing.Size(244, 172);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 11;
             this.pictureBox8.TabStop = false;
@@ -143,7 +145,7 @@
             // 
             this.GameTitle.AutoSize = true;
             this.GameTitle.Font = new System.Drawing.Font("Malgun Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GameTitle.Location = new System.Drawing.Point(448, 243);
+            this.GameTitle.Location = new System.Drawing.Point(448, 262);
             this.GameTitle.Name = "GameTitle";
             this.GameTitle.Size = new System.Drawing.Size(489, 45);
             this.GameTitle.TabIndex = 12;
@@ -158,21 +160,40 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(456, 351);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(198, 44);
-            this.button1.TabIndex = 13;
+            this.button1.Size = new System.Drawing.Size(198, 45);
+            this.button1.TabIndex = 1;
             this.button1.Text = "Restart";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // CountUp
+            // 
+            this.CountUp.Enabled = true;
+            this.CountUp.Interval = 1000;
+            // 
+            // ShowSeconds
+            // 
+            this.ShowSeconds.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ShowSeconds.ForeColor = System.Drawing.Color.White;
+            this.ShowSeconds.Location = new System.Drawing.Point(740, 351);
+            this.ShowSeconds.Name = "ShowSeconds";
+            this.ShowSeconds.Size = new System.Drawing.Size(198, 45);
+            this.ShowSeconds.TabIndex = 14;
+            this.ShowSeconds.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.ClientSize = new System.Drawing.Size(1341, 658);
+            this.ClientSize = new System.Drawing.Size(1346, 658);
+            this.Controls.Add(this.ShowSeconds);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.GameTitle);
             this.Controls.Add(this.pictureBox8);
@@ -185,7 +206,8 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Memory Game";
+            this.Text = "-";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -212,6 +234,8 @@
         private System.Windows.Forms.Label GameTitle;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer CountUp;
+        private System.Windows.Forms.Label ShowSeconds;
     }
 }
 

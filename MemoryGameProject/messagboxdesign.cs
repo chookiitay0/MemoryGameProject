@@ -18,7 +18,11 @@ namespace MemoryGameProject
         public MessagBoxDesign()
         {
             InitializeComponent();
+
+            
+
         }
+
 
 
         private void MessagBoxDesign_Load(object sender, EventArgs e)
@@ -28,7 +32,7 @@ namespace MemoryGameProject
 
         private void YesButton_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void NoButton_Click(object sender, EventArgs e)

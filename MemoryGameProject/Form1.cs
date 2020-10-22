@@ -31,7 +31,7 @@ namespace MemoryGameProject
 
             SetImagesArray();
 
-            restart();
+            CountUp.Start();
         }
 
         public void Swap (int i, int j)
@@ -163,35 +163,65 @@ namespace MemoryGameProject
             
         }
 
-        
-
         private void restart()
         {
-            
-        }
+            pictureBox1.Image = Resources.back;
+            pictureBox2.Image = Resources.back;
+            pictureBox3.Image = Resources.back;
+            pictureBox4.Image = Resources.back;
+            pictureBox5.Image = Resources.back;
+            pictureBox6.Image = Resources.back;
+            pictureBox7.Image = Resources.back;
+            pictureBox8.Image = Resources.back;
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+            pictureBox1.Enabled = true;
+            pictureBox2.Enabled = true;
+            pictureBox3.Enabled = true;
+            pictureBox4.Enabled = true;
+            pictureBox5.Enabled = true;
+            pictureBox6.Enabled = true;
+            pictureBox7.Enabled = true;
+            pictureBox8.Enabled = true;
+
+            m_IsFirst = true;
 
             m_Count = 0;
 
-            Images_Array[0] = Resources.back;
-            Images_Array[1] = Resources.back;
-
-            Images_Array[2] = Resources.back;
-            Images_Array[3] = Resources.back;
-
-            Images_Array[4] = Resources.back;
-            Images_Array[5] = Resources.back;
-
-            Images_Array[6] = Resources.back;
-            Images_Array[7] = Resources.back;
-
             SetImagesArray();
+        }
 
-            m_FirstPictureBox.Image = Resources.back;
-            m_SecondPictureBox.Image = Resources.back;
-            m_Third
+        private void button1_Click(object sender, EventArgs e) // button1 = restart button
+        {
+            restart();
+        }
+
+        int Seconds_count = 0;
+        private void CountUp_Tick(object sender, EventArgs e)
+        {
+            
+            ShowSeconds.Text = Seconds_count.ToString() + " Seconds";
+            Seconds_count++;
+        
+            if (m_Count == 8)
+            {
+                CountUp.Stop();
+            }
+                    
+        }
+
+        private void ShowSeconds_Click(object sender, EventArgs e)
+        {
+            //CountUp_Tick();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void ShowSeconds_Click_1(object sender, EventArgs e)
+        {
 
         }
     }
