@@ -132,6 +132,7 @@
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(262, 32);
             this.pictureBox8.Name = "pictureBox8";
@@ -176,6 +177,7 @@
             // 
             this.CountUp.Enabled = true;
             this.CountUp.Interval = 1000;
+            this.CountUp.Tick += new System.EventHandler(this.CountUp_Tick);
             // 
             // ShowSeconds
             // 
@@ -205,6 +207,7 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "-";
             this.Load += new System.EventHandler(this.Form1_Load);

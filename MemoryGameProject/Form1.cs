@@ -193,6 +193,9 @@ namespace MemoryGameProject
         private void button1_Click(object sender, EventArgs e) // button1 = restart button
         {
             restart();
+            CountUp.Stop();
+            Seconds_count = 0;
+            CountUp.Start();
         }
 
         int Seconds_count = 0;
@@ -216,7 +219,7 @@ namespace MemoryGameProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Text = "Memory Game - Guy Wittlin and Itay Shachar";
 
         }
 
